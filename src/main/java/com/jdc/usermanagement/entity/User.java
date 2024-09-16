@@ -1,6 +1,8 @@
 package com.jdc.usermanagement.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PastOrPresent;
 import lombok.*;
 
 import java.time.LocalDate;
