@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "c7917c21-cfc1-449b-b5c8-832ccbd8910e",
+		"name": "user-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31542463"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"John\",\r\n  \"email\": \"john@gmail.com\",\r\n  \"joinDate\": \"2024-09-16\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Thomas\",\r\n  \"email\": \"thomas@gmail.com\",\r\n  \"joinDate\": \"2024-09-16\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/users/1"
+			},
+			"response": []
+		}
+	]
+}
